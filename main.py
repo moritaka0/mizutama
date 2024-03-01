@@ -19,8 +19,8 @@ app = Flask(__name__)
 # 環境変数からchannel_secret・channel_access_tokenを取得
 #channel_secret = os.environ['LINE_CHANNEL_SECRET']
 #channel_access_token = os.environ['LINE_CHANNEL_ACCESS_TOKEN']
-channel_secret = 'e242c61890a3d8a19e16f9b3aa086c0c'
-channel_access_token = 'bJxpyvj91Cl7WyL1lpRvZL0Jsiw5UPvPV+hI+Ol8fxX2G8dy9s8GGEDUC9pHkepDW7wG+8AT6PcqVM8L8cGpRFArvuXqGuqvPqTcnVgrafh6//98ggTIziMItg7vwKJeDfxYzFuYjsb5kJ2UcHi2CAdB04t89/1O/w1cDnyilFU='
+channel_secret = 'process.env.secretKey'
+channel_access_token = 'process.env.accessToken'
 
 
 line_bot_api = LineBotApi(channel_access_token)
